@@ -87,3 +87,5 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType java set omnifunc=javacomplete#Complete
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
 nnoremap <silent> <F6> :TlistToggle<CR>
+
+" map <Leader>n <plug>NERDTreeTabsToggle<CR>
