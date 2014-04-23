@@ -26,6 +26,12 @@ set smarttab
 set smartcase
 set ignorecase
 
+"folding settings
+set foldmethod=syntax "fold based on indent
+set foldnestmax=10 "deepest fold is 10 levels
+set nofoldenable "disable folding by default
+"set foldlevel=1
+
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
