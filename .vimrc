@@ -11,6 +11,7 @@ set history=50		" keep 50 lines of command line history
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set expandtab
 
 filetype on           " Enable filetype detection
 filetype plugin on    " Enable filetype-specific plugins
@@ -87,5 +88,7 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType java set omnifunc=javacomplete#Complete
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
 nnoremap <silent> <F6> :TlistToggle<CR>
+
+autocmd FileType make setlocal noexpandtab
 
 " map <Leader>n <plug>NERDTreeTabsToggle<CR>
