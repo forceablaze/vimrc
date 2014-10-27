@@ -17,7 +17,10 @@ filetype on           " Enable filetype detection
 filetype plugin on    " Enable filetype-specific plugins
 filetype indent on
 
-colors vgod
+"colors vgod
+colors monokai
+"let g:molokai_original = 1
+
 set hlsearch
 set showmatch
 set showmode
@@ -86,8 +89,9 @@ nmap <leader>p :set paste!<BAR>set paste?<CR>
 
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType java set omnifunc=javacomplete#Complete
-nnoremap <silent> <F5> :NERDTreeToggle<CR>
-nnoremap <silent> <F6> :TlistToggle<CR>
+nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
+"nnoremap <silent> <F6> :TlistToggle<CR>
+nnoremap <silent> <F6> :TagbarToggle<CR>
 
 autocmd FileType make setlocal noexpandtab
 
