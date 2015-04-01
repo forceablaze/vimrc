@@ -11,7 +11,7 @@ set history=50		" keep 50 lines of command line history
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set expandtab
+"#set expandtab
 
 filetype on           " Enable filetype detection
 filetype plugin on    " Enable filetype-specific plugins
@@ -95,4 +95,6 @@ nnoremap <silent> <F6> :TagbarToggle<CR>
 
 autocmd FileType make setlocal noexpandtab
 
+" Ctrl-] with  new tab 
+nmap <C-]> viwy:tab tag <C-R>"<CR>
 " map <Leader>n <plug>NERDTreeTabsToggle<CR>
