@@ -98,3 +98,8 @@ autocmd FileType make setlocal noexpandtab
 " Ctrl-] with  new tab 
 nmap <C-]> viwy:tab tag <C-R>"<CR>
 " map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
+noremap <C-l> :vertical resize +5<CR>
+noremap <C-j> :vertical resize -5<CR>
+noremap <C-i> :resize +5<CR>
+noremap <C-k> :resize -5<CR>
