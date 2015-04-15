@@ -103,3 +103,6 @@ noremap <C-l> :vertical resize +5<CR>
 noremap <C-j> :vertical resize -5<CR>
 noremap <C-i> :resize +5<CR>
 noremap <C-k> :resize -5<CR>
+
+vnoremap <C-c> "+yy
+noremap <C-v> "+p
