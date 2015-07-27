@@ -1,4 +1,6 @@
-call pathogen#incubate()
+" runtime bundle/vim-pathogen/autoload/pathogen.vim
+" call pathogen#incubate()
+call pathogen#infect('bundle/{}')
 call pathogen#helptags()
 
 syntax on
