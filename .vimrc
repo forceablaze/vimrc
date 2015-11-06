@@ -13,7 +13,7 @@ set history=50		" keep 50 lines of command line history
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-"#set expandtab
+set expandtab
 
 filetype on           " Enable filetype detection
 filetype plugin on    " Enable filetype-specific plugins
@@ -108,3 +108,7 @@ noremap <C-k> :resize -5<CR>
 
 vnoremap <C-c> "+yy
 noremap <C-v> "+p
+
+nnoremap <C-H> :Hexmode<CR>
+inoremap <C-H> <Esc>:Hexmode<CR>
+vnoremap <C-H> :<C-U>Hexmode<CR>
