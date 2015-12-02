@@ -3,6 +3,8 @@
 call pathogen#infect('bundle/{}')
 call pathogen#helptags()
 
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
 syntax on
 set nu
 set bs=2			" allow backspacing over everything in insert mode
@@ -20,7 +22,8 @@ filetype plugin on    " Enable filetype-specific plugins
 filetype indent on
 
 "colors vgod
-colors monokai
+"colors monokai
+colors zenburn
 "let g:molokai_original = 1
 
 set hlsearch
@@ -49,6 +52,15 @@ set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%%h\ %w\ \
 set statusline+=\ \ \ [%{&ff}/%Y]
 set statusline+=\ \ \ %<%20.30(%{hostname()}:%{CurDir()}%)\
 set statusline+=%=%-10.(%l,%c%V%)\ %p%%/%L
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 function! CurDir()
 	let curdir = substitute(getcwd(), $HOME, "~", "")
@@ -109,6 +121,7 @@ noremap <C-k> :resize -5<CR>
 vnoremap <C-c> "+yy
 noremap <C-v> "+p
 
+" Hexmode
 nnoremap <C-H> :Hexmode<CR>
 inoremap <C-H> <Esc>:Hexmode<CR>
 vnoremap <C-H> :<C-U>Hexmode<CR>
