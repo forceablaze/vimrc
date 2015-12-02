@@ -16,3 +16,9 @@
 [submodule "bundle/hexmode"]
 	path = bundle/hexmode
 	url = https://github.com/fidian/hexmode.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
