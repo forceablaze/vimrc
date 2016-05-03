@@ -1,26 +1,28 @@
 " runtime bundle/vim-pathogen/autoload/pathogen.vim
 " call pathogen#incubate()
-call pathogen#infect('bundle/{}')
-call pathogen#helptags()
+" call pathogen#infect('bundle/{}')
+" call pathogen#helptags()
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-":set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-"Plugin 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'wincent/command-t'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-"Plugin 'L9'
+Plugin 'L9'
 
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
@@ -31,7 +33,7 @@ filetype off                  " required
 
 "Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " All of your Plugins must be added before the following line
-"call vundle#end()            " required
+call vundle#end()            " required
 
 syntax on
 set nu
@@ -89,6 +91,8 @@ set statusline+=%=%-10.(%l,%c%V%)\ %p%%/%L
 "let g:syntastic_auto_loc_list = 1
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
+
+let g:pymode_python = 'python3'
 
 function! CurDir()
 	let curdir = substitute(getcwd(), $HOME, "~", "")
