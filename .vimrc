@@ -30,6 +30,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Valloric/YouCompleteMe'
 
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -88,6 +90,16 @@ set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%%h\ %w\ \
 set statusline+=\ \ \ [%{&ff}/%Y]
 set statusline+=\ \ \ %<%20.30(%{hostname()}:%{CurDir()}%)\
 set statusline+=%=%-10.(%l,%c%V%)\ %p%%/%L
+
+" powerline
+"let g:powerline_pycmd = "py3"
+"let g:powerline_pyeval = "py3eval"
+"set laststatus=2
+"set t_Co=256
+"set rtp+=/usr/lib/python3.4/site-packages/powerline/bindings/vim/
+"python3 from powerline.vim import setup as powerline_setup
+"python3 powerline_setup()
+"python3 del powerline_setup
 
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
